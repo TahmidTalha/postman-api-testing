@@ -24,8 +24,25 @@ The project was created as part of my QA (Software Quality Assurance) learning a
 
 ## ▶️ How to Run This Project
 
-### 1. Install Newman globally
+### 1. Install Newman Globally
+
 ```bash
 npm install -g newman
-###2.Run API tests in terminal
+npm install -g newman-reporter-htmlextra
+```
+
+### 2. Run API Tests and Generate HTML Report
+
+```bash
 newman run API_Testing.postman_collection.json -r htmlextra --reporter-htmlextra-export newman/report.html
+```
+
+### 3. View Test Report
+
+After execution, open:
+
+```text
+newman/report.html
+```
+
+to view the HTML test report in your browser.
