@@ -136,17 +136,16 @@ POST /booking
 GET /booking/{{id}}
 ```
 
-**Validations**
+## **Validations**
 
-Verify status code is 200
-Verify response time is less than 2000 ms
-Validate booking details match the created data:
-First name
-Last name
-Total price
-Deposit value
-Check-in date
-Check-out date
+- Status code = 200  
+- Response time < 2000 ms  
+- First name matches created data  
+- Last name matches created data  
+- Total price matches created data  
+- Deposit value matches created data  
+- Check-in date matches created data  
+- Check-out date matches created data  
 
 ---
 
